@@ -1,0 +1,30 @@
+.search{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.search input{
+    width: 500px;
+    height: 70px;
+    border-radius: 150px;
+    border: none;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    padding-left: 55px;
+    background-color: white;
+    font-size: 25px;
+    background-image: url("../assets/search.png");
+    background-size: 20px 20px;
+    background-position: 25px center; /* Position de l'image dans l'input */
+    background-repeat: no-repeat;
+}
+
+.search input::placeholder{
+    color: rgb(112, 112, 112);
+}
+
+.search .notif{
+    background-color: white;
+    border-radius: 100px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}

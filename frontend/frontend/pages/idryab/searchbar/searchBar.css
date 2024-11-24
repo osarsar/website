@@ -1,0 +1,46 @@
+.search-card {
+  display: flex;
+  align-items: center;
+  /* padding: 10px; */
+  /* margin-left: 10px; */
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.29);
+  height: 40px;
+  width: 90%;
+  background-color: #F6F6F6;
+  max-width: 90%;
+}
+
+.search-picture-container {
+  position: relative;
+  margin-right: 10px;
+}
+
+.search-picture {
+  width: 20px;
+  height: 20px;
+  color: #696868;
+}
+
+.search-info {
+  flex: 1;
+}
+
+.search-info input {
+  margin: 0;
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  background-color: #ffffff00;
+  color: #333;
+}
+
+.found-card{
+  display: flex;
+  justify-content: end;
+  background-color: #696868;
+}

@@ -1,0 +1,95 @@
+version: '3.8'
+
+services:
+
+#------------------------ Frontend -------------------------#
+
+  react:
+    build: frontend
+    image: react-image
+    container_name: react-container
+    ports:
+      - "5173:5173"
+    volumes:
+      - react-volume:/home/frontend/src
+    command: bash -c "npm run dev -- --host 0.0.0.0 --port 5173"
+    restart: always
+    networks:
+      - mynetworks
+
+#-------------------------Backend---------------------------#
+
+  nginx:
+    build: backend/nginx
+    image: nginx-image
+    container_name: nginx-container
+    ports:
+      - "80:80"
+    depends_on:
+      - registration
+      - react
+    restart: always
+    networks:
+      - mynetworks
+    volumes:
+      - nginx-logs:/var/log/nginx
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"  # Map Redis port to the host
+    restart: always
+    networks:
+      - mynetworks
+
+  registration:
+    build: backend/dg_registration
+    image: dg_registration-image
+    container_name: dg_registration-container
+    tty: true #added for debugging, by temsa
+    ports:
+      - "8000:8000"
+    volumes:
+      - dg_registration-volume:/home/env/backend
+    command: daphne -b 0.0.0.0 -p 8000 backend.asgi:application
+    restart: always
+    networks:
+      - mynetworks
+
+
+
+#------------------------- volumes -------------------------#
+
+
+volumes:
+  dg_registration-volume:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/backend/dg_registration/dg_volume
+      o: bind
+
+  react-volume:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/frontend/frontend
+      o: bind
+      
+  nginx-volumes:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/backend/nginx/config
+      o: bind
+
+  nginx-logs:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/backend/nginx/logs
+      o: bind
+
+networks:
+  mynetworks:
+    driver: bridge

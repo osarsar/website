@@ -1,0 +1,26 @@
+.header-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .header-card .profile-picture {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  .header-card .header-info {
+    display: flex;
+    justify-content:center;
+    flex: 1;
+  }
+  
+  .header-card .header-name {
+    margin: 0;
+    font-size: 30px;
+    color: #333;
+  }
+  

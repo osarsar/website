@@ -1,0 +1,131 @@
+.home_all{
+    background-image: url('../assets/homeback.jpg');
+}
+
+.home_all .nav{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home_all .nav img{
+    filter: drop-shadow(0 8px 16px rgba(102, 102, 102, 0.5));
+    position: relative;
+    left: 2%;
+}
+
+.home_all .nav .sign{
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10%;
+}
+
+.home_all .nav .sign button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 70px 15px 70px;
+    border-radius: 60px;
+    border: none;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    font-size: 30px;
+}
+
+.home_all .nav .sign button:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.home_all .font{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_all .font .right img{
+    width: 900px;
+    height: 900px;
+    position: relative;
+    bottom: 100px;
+    filter: drop-shadow(0 8px 16px rgba(102, 102, 102, 0.5));
+}
+
+.home_all .font .left{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    row-gap: 15%;
+    text-shadow: 0px 0px 20px rgba(70, 70, 70, 0.4);
+    position: relative;
+    left: 100px;
+}
+
+.home_all .font .left .title{
+    font-size: 80px;
+    position: relative;
+    bottom: 150px;
+}
+
+.home_all .font .left .title .gamess{
+    position: relative;
+    bottom: 20px;
+}
+
+.home_all .font .left .text{
+    font-size: 22px;
+    position: relative;
+    left: 20px;
+    bottom: 140px;
+}
+
+.home_all .font .left .button{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+}
+
+.home_all .font .left button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px 60px 15px 60px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    font-size: 35px;
+    position: relative;
+    bottom: 150px;
+    right: 100px;
+}
+
+.home_all .font .left button:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.home_all .animation .overlays {
+    position: fixed; /* Utiliser fixed pour couvrir tout l'écran */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond noir avec transparence */
+    display: flex; /* Centrer le contenu */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Assurez-vous qu'il soit au-dessus des autres éléments */
+}
+
+.home_all .animation .overlays .modal-content {
+    padding: 20px;
+    border-radius: 8px; /* Coins arrondis pour le modal */
+}

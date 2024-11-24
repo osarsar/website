@@ -1,0 +1,50 @@
+.Restore{
+    height: 100vh;
+    background-image: url('../assets/profilback.jpg');
+
+}
+
+.Restore .rdash{
+    position: relative;
+    top: 300px;
+    left: 500px;
+    width: 50%;
+}
+
+.Restore .message{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    height: 80vh;
+    justify-content: center;
+    position: relative;
+    left: 200px;
+}
+
+
+.Restore .title{
+    font-size: 70px;
+}
+
+
+.Restore .text{
+    font-size: 30px;
+}
+
+.Restore button{
+    font-size: 40px;
+    background-color: #390A76;
+    padding: 15px 50px 15px 50px;
+    border: none;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    color: white;
+    width: 600px;
+}
+
+.Restore button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

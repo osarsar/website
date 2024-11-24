@@ -1,0 +1,83 @@
+/* Start The Game : */
+.pong-game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.users-info {
+  background-color: #360065;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#pong {
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  width: 100%;
+  height: 500px;
+}
+
+#vs {
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.user-info {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.user-score {
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 50%;
+}
+.user-details{
+  margin-right: 15px;
+  margin-left: 15px;
+  
+}
+/* End of Game : */
+
+

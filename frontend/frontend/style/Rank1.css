@@ -1,0 +1,50 @@
+.first-rank{
+    background-color: #F4F5FA;   
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    height: 150px;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-rank .tropher{
+    height: 120px;
+    width: 120px;
+    filter: drop-shadow(0 8px 16px rgba(102, 102, 102, 0.5));
+}
+
+.first-rank .middle .username{
+    position: relative;
+    bottom: 40px;
+    right: 22px;
+    font-size: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+}
+
+.first-rank .image{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 200px;
+    border: 2px solid black;
+    transform: translate(-15%, -30%);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.first-rank .rank{
+    font-size: 120px;
+    font-weight: normal;
+    font-family: 'Katibeh', cursive;
+    filter: drop-shadow(0 8px 16px rgba(102, 102, 102, 0.5));
+    position: relative;
+    right: 20px;
+    top: 30px;
+}
+
+
